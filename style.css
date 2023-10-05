@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Your Font Family", sans-serif;
+}
+
+.Bg-image {
+    position: relative;
+    background-image: url('./bg1.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgba(47, 57, 78, 0.9); 
+ 
+  }
+  
+  /* Create a pseudo-element for the trapezoid shape in the bottom-right corner */
+  .Bg-image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height:100vh;
+    border-left: 1400px solid transparent;
+    border-bottom: 150px solid white;
+    background-color: rgba(47, 57, 78, 0.7); /* Background color with opacity */
+
+  }
+  
+
+#nav-section {
+  /* background-color: #2f394e; */
+  height: 100vh;
+}
+
+
+#description-section {
+  background-color: #f7f5f3;
+}
+
+#hero-section2 {
+    position: relative;
+    background-color: #2f394e;
+    height: 80%;
+    z-index: 1;
+  }
+  
+  .parallelogram {
+    position: relative;
+    width: 100px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background: #2f394e; /* Background color same as the section */
+  }
+  
+  .top-left {
+    top: 0;
+    left: 0;
+    transform: skew(20deg);
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: skew(-20deg);
+  }
+  
+  
+
+
+
+/* Description section */
+.call-button {
+  border: none;
+  height: 40px;
+  width: 309px;
+  background-color: #f7f5f3;
+  color: black;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.call-button2 {
+  border: none;
+  height: 40px;
+  width: 309px;
+  background-color: #f7f5f3;
+  color: black;
+  margin-top: 30px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.hero-img {
+  height: 350px;
+}
+#location{
+    background-color: #f7f5f3;
+}
+#footer-section{
+    background-color: #f7f5f3;
+}
+
+
+.input-box {
+  position: relative;
+  padding-right: 30px; /* Add space for the arrow on the right */
+  width: 220px;
+}
+
+/* Style for the arrow */
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the distance from the right edge */
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the arrow from blocking input */
+}
+
+
+
